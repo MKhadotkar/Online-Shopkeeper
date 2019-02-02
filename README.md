@@ -1,1 +1,3 @@
-# Online-Shopkeeper
+# mini-project
+
+based on MEAN STACK 
