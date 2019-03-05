@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="#E0E0E0">
+
+	<h1 style="position: absolute;top: 430px;left: 30px;">Welcome Please Login Here</h1>
+
+	<div class="login1">
+		<img src="images/logo.jpg">
+		<p class="us1"><b>Customer ID or Phone: </b></p>
+		<input id="ipt1" type="text"  ng-model="login.email" name="uname" placeholder="UserName or phone">
+		<p class="us2"><b>Password:</b></p>
+		<input id="ipt2" type="password" ng-model="login.password" name="password" placeholder="password">
+		<a id="fp" href="#/forget" >Forget Passwrod ?</a>
+		<button id="lg" ng-click="login_data()">Login</button>
+		<p style="	position: absolute;
+			top: 310px;
+			left: 60px;
+			color:red;">{{msg1}}</p>
+			<p style="	position: absolute;
+				top: 323px;
+				left: 60px;
+				color:red;">{{msg2}}</p>
+	</div>
+
+	<div id="reg">
+		<h1 style="margin-top: 30px;">Register Here</h1>
+		<div>
+
+			<p style="margin-top: 20px;font-size: 20px;font-style: bold;font-family: cursive;margin-left: 20px;">Customers Name:</p>
+			<input type="text" ng-model="customer.first_name"  style="width: 300px;height: 30px;border-color: grey; border-radius: 10px;margin-left: 50px;margin-top: 10px;background-color: skyblue;" placeholder="First Name">
+			{{name_msg}}
+			<input type="text" ng-model="customer.last_name"  style="width: 300px;height: 30px;border-color: grey; border-radius: 10px;margin-left: 50px;margin-top: 10px;background-color: skyblue;" placeholder="Last Name">
+			{{last_name}}
+			<input type="text" ng-model="customer.address"  style="width: 300px;height: 30px;border-color: grey; border-radius: 10px;margin-left: 50px;margin-top: 10px;background-color: skyblue;" placeholder="Address">
+			{{address}}
+			<p style="margin-top: 20px;font-size: 20px;font-style: bold;font-family: cursive;margin-left: 10px;">Email ID or Phone:</p>
+			<input type="text" ng-model="customer.email" style="width: 300px;height: 30px;border-color: grey; border-radius: 10px;margin-left: 50px;margin-top: 10px;background-color: skyblue;" placeholder="Email or Phone">
+			{{email}}
+			<p style="margin-top: 20px;font-size: 20px;font-style: bold;font-family: cursive;margin-left: 10px;">Password:</p>
+			<input type="password" ng-model="customer.password" style="width: 300px;height: 30px;border-color: grey; border-radius: 10px;margin-left: 50px;margin-top: 10px;background-color: skyblue;" placeholder="Password">
+			<p style="margin-top: 20px;font-size: 20px;font-style: bold;font-family: cursive;margin-left: 10px;">Re-write Password:</p>
+			<input type="password" ng-model="customer.reenter_password"  style="width: 300px;height: 30px;border-color: grey; border-radius: 10px;margin-left: 50px;margin-top: 10px;background-color: skyblue;" placeholder="Password">
+			{{passwd_msg}}
+			<button style="margin-top: 80px;margin-left: 200px;width: 100px;height: 50px;background-color: #FF6633;border-color: black;border-radius: 10px;" ng-click="submit_registation()">Sign Up</button>
+			{{msg}}
+		</div>
+	</div>
+
+	<div id="footer">
+		<p style="color:white;font-size:25px; margin-top:15px;">contact : 7020862914</p>
+		<p style="color:white;font-size:25px;margin-top:10px;">onlineshopkeper@gmail.com</p>
+	</div>
+</body>
+</html>
